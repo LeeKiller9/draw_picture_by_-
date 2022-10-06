@@ -53,9 +53,15 @@ public class Main {
 //            f += 2;
 //        }
 
-        int g = 5;
-        for (int i = 1; i <= g; i++) {
-
+        int g = 6;
+        for (int i = 0; i < g; i++) {
+            for (int j = 1; j < g - i; j++) {
+                System.out.print(" ");
+            }
+            for (int z = g - i; z <= g + i; z++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
         }
     }
 }
